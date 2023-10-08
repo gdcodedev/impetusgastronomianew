@@ -158,13 +158,19 @@ body {
   @media (max-width: 568px) {
     .cat-button {
       width: 85% !important; 
-      top: 70%;
+      top: 73%;
+    }
+  }
+  @media (max-width: 414px) {
+    .cat-button {
+      width: 85% !important; 
+      top: 72%;
     }
   }
   @media (max-width: 375px) {
     .cat-button {
       width: 85% !important; 
-      top: 70%;
+      top: 72%;
     }
   }
   @media (max-width: 360px) {
