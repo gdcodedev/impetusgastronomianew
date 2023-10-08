@@ -142,6 +142,13 @@ body {
       top: 65%;
     }
   }
+
+  @media (max-width: 375px) {
+    .cat-button {
+      width: 85% !important; 
+      top: 65%;
+    }
+  }
   .cat-button:hover {
     background-color: rgba(249, 253, 249, 0.1); /* Cor de fundo com transparência ao passar o mouse */
   }
