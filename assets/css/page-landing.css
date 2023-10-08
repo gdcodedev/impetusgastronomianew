@@ -136,6 +136,12 @@ body {
   }
   
   /* Estilos para dispositivos móveis */
+  @media (max-width: 1024px) {
+    .cat-button {
+      width: 32% !important; 
+      top: 85%;
+    }
+  }
   @media (max-width: 767px) {
     .cat-button {
       width: 85% !important; 
@@ -143,6 +149,12 @@ body {
     }
   }
 
+  @media (max-width: 568px) {
+    .cat-button {
+      width: 85% !important; 
+      top: 70%;
+    }
+  }
   @media (max-width: 375px) {
     .cat-button {
       width: 85% !important; 
@@ -156,20 +168,6 @@ body {
     }
   }
 
-
-  @media (max-width: 568px) {
-    .cat-button {
-      width: 85% !important; 
-      top: 70%;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .cat-button {
-      width: 32% !important; 
-      top: 85%;
-    }
-  }
   .cat-button:hover {
     background-color: rgba(249, 253, 249, 0.1); /* Cor de fundo com transparência ao passar o mouse */
   }
