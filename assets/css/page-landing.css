@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url();
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Playfair Display SC', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39, 39, 41);
+}
+
+
+
+
+.line {
+    width: 100%;
+    height: .1rem;
+    padding: 1px;
+    border-radius: 2px;
+    background-color: rgb(69, 71, 71);
+    box-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.788);
+    transition: transform .7s;
+}
+
+.show-menu #line1 {
+    transform: rotate(45deg) translate(.4rem, .9rem);
+    background-color: rgb(224, 49, 102);
+    box-shadow: none;
+}
+
+.show-menu #line2 {
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.show-menu #line3 {
+    transform: rotate(-45deg) translate(.3rem, -.9rem);
+    background-color: rgb(224, 49, 102);
+    box-shadow: none;
+
+}
+
+
+.menu {
+    font-family: 'Playfair Display SC', sans-serif;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    text-align: center;
+    margin-bottom: .5rem;
+    display: block;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    line-height: 35px;
+
+
+}
+
+.menu-link {
+    padding: 7px 5px;
+    color: #fff;
+    display: block;
+
+}
+
+.menu-background {
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo inicialmente transparente */
+  }
+
+.menu-link:hover {
+    color: rgb(231, 213, 213);
+    transition: color .5s;
+}
+
+.container-nav.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo quando rolada */
+  }
+
+  
+
+.logo-imp {
+    position: fixed;
+    z-index: 15;
+
+}
+/* Estilos para o botão CAT */
+/* Adicionando a animação de pulsação */
+@keyframes blink {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #f1e4dd49; /* Cor original do botão */
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  .cat-button {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #f1e4dd;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    animation: blink 1s infinite;
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 767px) {
+    .cat-button {
+      width: 85% !important; 
+      top: 65%;
+    }
+  }
+  .cat-button:hover {
+    background-color: rgba(249, 253, 249, 0.1); /* Cor de fundo com transparência ao passar o mouse */
+  }
+  
+  .orcamento {
+    background-color: rgba(249, 253, 249, 0.356) !important;
+    color: #0c0909; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    cursor: pointer;
+    border-radius: 5px; 
+    text-decoration: none; 
+    animation: blink 1s infinite;
+  }
+
+  .orcamento:hover {
+    background-color: rgba(237, 241, 237, 0.199) !important; /* Cor de fundo com transparência ao passar o mouse */
+  }
+
+  /* Estilizando o ícone de fechar no modal */
+.close-icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer; /* Cor desejada */
+    /* Adicione mais estilos conforme necessário para se adequar ao seu design */
+  }
+
+  .bi-map {
+    cursor: pointer;
+  }
+  
+  .close-icon:hover {
+    color: #ff0000; /* Cor ao passar o mouse, se desejar */
+  }
+  /* Estilos para o menu no mobile */
+@media (max-width: 767px) {
+    .menu-link {
+      font-size: 15px; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+  }
+
+.display-none {
+    display: none !important;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.video-video {
+    width: 100%;
+    height: 100%;
+}
+
+.bg-video {
+    position: relative;
+    height: 116vh;
+    overflow: hidden;
+}
+
+.bg-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@media (max-width: 590px) {
+    .logo-imp {
+        width: 380;
+        height: 150px;
+    }
+    p#emailtexto {
+            font-size: 10px !important;
+        }
+        .contact .info-item p {
+            font-size: 14px !important;
+        }
+}
+
+.section-header p, span {
+    font-family: 'Playfair Display SC', sans-serif;
+}
+
+.section-header p {
+    font-size: 30px !important;
+}
+
+.container h1 {
+    font-family: 'Playfair Display SC', sans-serif;
+}
+
+.content p {
+    font-family: 'Playfair Display SC', sans-serif;
+}
+
+@media(max-width: 700px){
+
+    .fecha-menu{
+        display: none;
+    }
+    .hamburguer{
+        display: block;
+        text-align: center;
+    }
+    .hamburguer button{
+        background-color: transparent;
+        border: 0px;
+
+    }
+    .aparece-menu{
+        display: block;
+        text-align: center;
+    }
+
+}
