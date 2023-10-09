@@ -136,6 +136,13 @@ body {
   }
   
   /* Estilos para dispositivos móveis */
+  @media (max-width: 1366px) {
+    .cat-button {
+      width: 32% !important; 
+      top: 82%;
+    }
+  }
+
   @media (max-width: 1280px) {
     .cat-button {
       width: 32% !important; 
